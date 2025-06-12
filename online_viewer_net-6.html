@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propuesta +Continuity (Disaster Recovery) | Su Solución de Continuidad de Negocio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .hero {
+             background: linear-gradient(rgba(26, 59, 93, 0.8), rgba(26, 59, 93, 0.8)), url(https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=2070) no-repeat center center/cover;
+        }
+        /* Ensures table cells in a row have the same height */
+        .table-fixed tbody tr {
+            display: table-row;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Navbar -->
+    <header class="bg-white shadow-md fixed w-full top-0 left-0 z-50">
+        <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <!-- Logo - REEMPLAZA LA URL EN 'src' CON LA DE TU LOGO -->
+            <a href="#inicio">
+                <img src="Solutions Group Logo.png" alt="Logo de la Empresa" class="h-10 w-auto">
+            </a>
+            
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#riesgo" class="text-gray-600 hover:text-blue-600">El Riesgo</a>
+                <a href="#solucion" class="text-gray-600 hover:text-blue-600">Nuestra Solución</a>
+                <a href="#beneficios" class="text-gray-600 hover:text-blue-600">Beneficios</a>
+                <a href="#porque-elegirnos" class="text-gray-600 hover:text-blue-600">¿Por Qué Nosotros?</a>
+                <a href="#inversion" class="text-gray-600 hover:text-blue-600">Inversión</a>
+            </div>
+            <a href="#contacto" class="hidden md:block bg-blue-600 text-white font-bold py-2 px-4 rounded-lg hover:bg-blue-700 transition duration-300">Descargar Cotización</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero h-screen flex items-center justify-center text-white text-center" id="inicio">
+            <div class="px-6">
+                <h1 class="text-4xl md:text-6xl font-black mb-4">Proteja el Corazón Financiero de su Empresa</h1>
+                <p class="text-lg md:text-xl max-w-3xl mx-auto mb-8">
+                    Garantice la Continuidad Operativa y elimine el riesgo de parálisis total con nuestra solución <strong>Disaster Recovery + Continuity (DRP+C)</strong>.
+                </p>
+                <a href="#contacto" class="bg-green-600 text-white font-bold py-3 px-8 rounded-lg text-lg hover:bg-green-700 transition duration-300">
+                    Ver Propuesta
+                </a>
+            </div>
+        </section>
+
+        <!-- Risk Section -->
+        <section id="riesgo" class="py-20">
+            <div class="container mx-auto px-6 text-center">
+                <div class="flex justify-center items-center gap-4 mb-4">
+                     <!-- Logo Cliente - REEMPLAZA LA URL EN 'src' CON LA DEL LOGO DEL CLIENTE -->
+                    <img src="FidelityLogos_Financiera_A-1.png" alt="Logo de Financiera Fidelity Loans" class="h-16 w-16 rounded-full" onerror="this.style.display='none'">
+                    <h2 class="text-3xl md:text-4xl font-bold text-blue-900">RIESGOS IDENTIFICADOS</h2>
+                </div>
+                <p class="max-w-3xl mx-auto text-gray-600 mb-12">
+                    Se ha identificado una vulnerabilidad crítica: toda su operación financiera depende de un único servidor, con una estrategia de respaldo insuficiente para un desastre real.
+                </p>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Problem Item 1 -->
+                    <div class="bg-white p-8 rounded-lg shadow-lg">
+                        <div class="text-5xl mb-4">💻</div>
+                        <h3 class="text-xl font-bold text-blue-900 mb-2">Servidor Único</h3>
+                        <p class="text-gray-600">4 Core, 64GB RAM, 2TB Disco. Si falla, todo se detiene.</p>
+                    </div>
+                    <!-- Problem Item 2 -->
+                    <div class="bg-white p-8 rounded-lg shadow-lg">
+                        <div class="text-5xl mb-4">💾</div>
+                        <h3 class="text-xl font-bold text-blue-900 mb-2">Respaldo Local</h3>
+                        <p class="text-gray-600">Una copia en el mismo disco no protege contra fallos, robo o ransomware.</p>
+                    </div>
+                    <!-- Problem Item 3 -->
+                    <div class="bg-white p-8 rounded-lg shadow-lg">
+                        <div class="text-5xl mb-4">☁️</div>
+                        <h3 class="text-xl font-bold text-blue-900 mb-2">Copia Manual en la Nube</h3>
+                        <p class="text-gray-600">Implica una recuperación lenta y propensa a errores que dura días.</p>
+                    </div>
+                </div>
+                <div class="mt-12 bg-yellow-100 border-l-4 border-yellow-500 text-yellow-700 p-6 rounded-lg max-w-4xl mx-auto text-left">
+                    <p class="font-bold">⚠️ Esto es un Punto Único de Falla (SPOF). Un incidente provocaría la interrupción inmediata y total de sus operaciones.</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Risk Matrix Section -->
+        <section id="matriz" class="py-20 bg-white">
+             <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-12 text-center">Matriz de Riesgo e Impacto al Negocio</h2>
+                <div>
+                    <table class="w-full border-collapse table-fixed">
+                        <thead>
+                            <tr class="bg-gray-100">
+                                <th class="p-2 border font-bold text-gray-600 text-sm md:text-base">Probabilidad</th>
+                                <th class="p-2 border font-bold text-gray-600 text-sm md:text-base" colspan="4">Impacto en el Negocio</th>
+                            </tr>
+                            <tr class="bg-gray-50">
+                                <th class="p-2 border w-1/5"></th>
+                                <th class="p-2 border font-semibold text-gray-600 text-xs md:text-sm w-1/5">Moderado</th>
+                                <th class="p-2 border font-semibold text-gray-600 text-xs md:text-sm w-1/5">Alto</th>
+                                <th class="p-2 border font-semibold text-gray-600 text-xs md:text-sm w-1/5">Crítico</th>
+                                <th class="p-2 border font-semibold text-gray-600 text-xs md:text-sm w-1/5">Extremo</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="p-2 border font-bold align-middle text-center text-sm md:text-base">Muy Alta</td>
+                                <td class="p-2 border align-middle"></td>
+                                <td class="p-2 border align-middle"></td>
+                                <td class="p-2 border align-middle"></td>
+                                <td class="p-2 border align-middle">
+                                    <div class="text-white p-2 rounded-lg bg-purple-700 shadow-md h-full flex flex-col justify-center">
+                                        <div class="font-bold text-xs md:text-sm">Ransomware</div>
+                                        <div class="text-[11px] md:text-xs opacity-90 mt-1">Parálisis total, pérdida de datos, extorsión financiera.</div>
+                                    </div>
+                                </td>
+                            </tr>
+                             <tr>
+                                <td class="p-2 border font-bold align-middle text-center text-sm md:text-base">Alta</td>
+                                <td class="p-2 border align-middle">
+                                     <div class="text-gray-800 p-2 rounded-lg bg-yellow-400 shadow-md h-full flex flex-col justify-center">
+                                        <div class="font-bold text-xs md:text-sm">Corrupción de SW</div>
+                                        <div class="text-[11px] md:text-xs opacity-90 mt-1">Reportes no confiables, necesidad de reprocesar.</div>
+                                    </div>
+                                </td>
+                                <td class="p-2 border align-middle">
+                                    <div class="text-white p-2 rounded-lg bg-orange-500 shadow-md h-full flex flex-col justify-center">
+                                        <div class="font-bold text-xs md:text-sm">Error Humano</div>
+                                        <div class="text-[11px] md:text-xs opacity-90 mt-1">Eliminación de datos, interrupción de procesos.</div>
+                                    </div>
+                                </td>
+                                <td class="p-2 border align-middle"></td>
+                                <td class="p-2 border align-middle"></td>
+                            </tr>
+                             <tr>
+                                <td class="p-2 border font-bold align-middle text-center text-sm md:text-base">Media</td>
+                                <td class="p-2 border align-middle">
+                                    <div class="text-gray-800 p-2 rounded-lg bg-yellow-400 shadow-md h-full flex flex-col justify-center">
+                                        <div class="font-bold text-xs md:text-sm">Fallo de Hardware</div>
+                                        <div class="text-[11px] md:text-xs opacity-90 mt-1">Inactividad, posible pérdida de datos recientes.</div>
+                                    </div>
+                                </td>
+                                <td class="p-2 border align-middle"></td>
+                                <td class="p-2 border align-middle">
+                                    <div class="text-white p-2 rounded-lg bg-red-600 shadow-md h-full flex flex-col justify-center">
+                                        <div class="font-bold text-xs md:text-sm">Desastre Físico</div>
+                                        <div class="text-[11px] md:text-xs opacity-90 mt-1">Pérdida de infraestructura, inactividad de semanas.</div>
+                                    </div>
+                                </td>
+                                <td class="p-2 border align-middle"></td>
+                            </tr>
+                             <tr>
+                                <td class="p-2 border font-bold align-middle text-center text-sm md:text-base">Baja</td>
+                                <td class="p-2 border align-middle"></td>
+                                <td class="p-2 border align-middle"></td>
+                                <td class="p-2 border align-middle"></td>
+                                <td class="p-2 border align-middle"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+             </div>
+        </section>
+
+        <!-- Solution Section -->
+        <section id="solucion" class="py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-2 text-center">Nuestra Solución: +Continuity Disaster Recovery</h2>
+                <p class="text-center text-gray-500 italic mb-12">Impulsada por la tecnología líder de Acronis Cyber Protect Cloud</p>
+                <div class="flex flex-wrap md:flex-nowrap gap-10">
+                    <!-- Solution Card 1 -->
+                    <div class="w-full md:w-1/2 bg-white p-8 rounded-lg shadow-lg border-l-4 border-blue-600">
+                        <h3 class="text-2xl font-bold text-blue-900 mb-4">🛡️ 1. Protección y Seguridad Integral</h3>
+                        <ul class="space-y-4">
+                            <li class="flex items-start"><span class="text-green-500 font-bold mr-2">✓</span><span><strong>Backup Completo:</strong> Imagen exacta de su servidor (SO, apps, datos, BD SQL).</span></li>
+                            <li class="flex items-start"><span class="text-green-500 font-bold mr-2">✓</span><span><strong>Estrategia Híbrida:</strong> Copias seguras y cifradas en la nube de +Continuity Acronis para protección total.</span></li>
+                            <li class="flex items-start"><span class="text-green-500 font-bold mr-2">✓</span><span><strong>Recuperación frente a desastres:</strong> En caso de un desastre podrá recuperarse en menos de 1 hora.</span></li>
+                        </ul>
+                    </div>
+                    <!-- Solution Card 2 -->
+                    <div class="w-full md:w-1/2 bg-white p-8 rounded-lg shadow-lg border-l-4 border-blue-600">
+                        <h3 class="text-2xl font-bold text-blue-900 mb-4">⚡ 2. Continuidad y Recuperación Instantánea</h3>
+                        <ul class="space-y-4">
+                            <li class="flex items-start"><span class="text-green-500 font-bold mr-2">✓</span><span><strong>Failover a la Nube:</strong> Activamos una réplica virtual en la nube <strong>en minutos</strong> si su servidor falla.</span></li>
+                            <li class="flex items-start"><span class="text-green-500 font-bold mr-2">✓</span><span><strong>Operación Ininterrumpida:</strong> Su equipo se conecta a la réplica y sigue trabajando.</span></li>
+                            <li class="flex items-start"><span class="text-green-500 font-bold mr-2">✓</span><span><strong>Retorno Asistido (Failback):</strong> Devolvemos la operación a su infraestructura de forma segura.</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Benefits Section -->
+        <section id="beneficios" class="py-20 bg-white">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-12">Beneficios Clave para su Tranquilidad</h2>
+                <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="bg-green-100 p-6 rounded-lg">
+                        <h4 class="text-xl font-bold text-green-800 mb-2">⏱️ RTO en Minutos</h4>
+                        <p class="text-green-700">Pase de días de inactividad a solo minutos. El negocio no se detiene.</p>
+                    </div>
+                    <div class="bg-green-100 p-6 rounded-lg">
+                        <h4 class="text-xl font-bold text-green-800 mb-2">📉 RPO Mínimo</h4>
+                        <p class="text-green-700">Respaldos frecuentes que aseguran que la pérdida de información sea casi nula.</p>
+                    </div>
+                    <div class="bg-green-100 p-6 rounded-lg">
+                        <h4 class="text-xl font-bold text-green-800 mb-2">🚀 Continuidad Real</h4>
+                        <p class="text-green-700">Su operación sigue generando valor, incluso durante un desastre.</p>
+                    </div>
+                    <div class="bg-green-100 p-6 rounded-lg">
+                        <h4 class="text-xl font-bold text-green-800 mb-2">🛡️ Protección 360°</h4>
+                        <p class="text-green-700">Unificamos backup, recuperación y ciberseguridad en una sola solución.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us Section -->
+        <section id="porque-elegirnos" class="py-20">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-12">¿Por Qué Elegir a Solutions Group, S.A.?</h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Item 1: Experience -->
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <div class="text-blue-600 text-5xl mb-4">🏆</div>
+                        <h3 class="text-xl font-bold text-blue-900 mb-2">23 Años de Experiencia</h3>
+                        <p class="text-gray-600">Liderando el mercado tecnológico y garantizando soluciones robustas y confiables.</p>
+                    </div>
+                    <!-- Item 2: ISO -->
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <div class="text-blue-600 text-5xl mb-4">📜</div>
+                        <h3 class="text-xl font-bold text-blue-900 mb-2">Certificación ISO-9001</h3>
+                        <p class="text-gray-600">Nuestro compromiso con la calidad está avalado por la norma ISO-9001:2015.</p>
+                    </div>
+                    <!-- Item 3: Success Stories -->
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <div class="text-blue-600 text-5xl mb-4">📈</div>
+                        <h3 class="text-xl font-bold text-blue-900 mb-2">+350 Historias de Éxito</h3>
+                        <p class="text-gray-600">Clientes satisfechos en diversas industrias son nuestra mejor carta de presentación.</p>
+                    </div>
+                    <!-- Item 4: Turnkey -->
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <div class="text-blue-600 text-5xl mb-4">🤝</div>
+                        <h3 class="text-xl font-bold text-blue-900 mb-2">Servicio Llave en Mano</h3>
+                        <p class="text-gray-600">Brindamos respaldo total, acompañamiento constante y soluciones listas para operar.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Investment Section -->
+        <section id="inversion" class="py-20 bg-white">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-12">Una Inversión Inteligente y Transparente</h2>
+                <div class="flex flex-wrap justify-center gap-10">
+                    <!-- Investment Card 1 -->
+                    <div class="bg-white p-8 rounded-lg shadow-lg w-full md:w-2/5 lg:w-1/3 flex flex-col border border-gray-200">
+                        <h3 class="text-2xl font-bold text-blue-900 mb-2">Implementación Inicial</h3>
+                        <p id="implementation-cost" class="text-5xl font-black text-blue-900 my-4">Cortesía</p>
+                        <p class="text-gray-500 italic mb-6">(Pago Único)</p>
+                        <ul class="text-left space-y-3 flex-grow">
+                            <li class="flex items-center"><span class="text-blue-500 mr-2">✓</span>Análisis y Diseño del DRP</li>
+                            <li class="flex items-center"><span class="text-blue-500 mr-2">✓</span>Instalación y Configuración</li>
+                            <li class="flex items-center"><span class="text-blue-500 mr-2">✓</span>Prueba de Failover Completa</li>
+                            <li class="flex items-center"><span class="text-blue-500 mr-2">✓</span>Capacitación y Documentación</li>
+                        </ul>
+                    </div>
+                    <!-- Investment Card 2 -->
+                    <div class="bg-blue-900 text-white p-8 rounded-lg shadow-xl w-full md:w-2/5 lg:w-1/3 flex flex-col ring-4 ring-blue-500">
+                         <h3 class="text-2xl font-bold mb-2">Servicio Gestionado DRP+C</h3>
+                        <p id="monthly-cost" class="text-5xl font-black my-4">$431.81</p>
+                        <p class="text-blue-200 italic mb-6">(Cuota Mensual | ITBMS Incluido)</p>
+                        <ul class="text-left space-y-3 flex-grow">
+                            <li class="flex items-center"><span class="text-blue-300 mr-2">✓</span>Licenciamiento y Almacenamiento</li>
+                            <li class="flex items-center"><span class="text-blue-300 mr-2">✓</span>Cómputo en la nube para DR</li>
+                            <li class="flex items-center"><span class="text-blue-300 mr-2">✓</span>Soporte y Monitoreo 24/7</li>
+                            <li class="flex items-center"><span class="text-blue-300 mr-2">✓</span>Prueba de DRP Anual Incluida</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section id="contacto" class="py-20">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-4">¿Listo para Blindar su Operación Financiera?</h2>
+                <p class="max-w-3xl mx-auto text-gray-600 mb-8">
+                    No deje la supervivencia de su empresa al azar. El mejor momento para actuar es ahora.
+                </p>
+                <!-- BOTÓN DE DESCARGA: Reemplaza 'URL_DE_TU_COTIZACION.pdf' con el enlace a tu archivo PDF -->
+                <a href="Fidelity Loans - DRP Propuesta.pdf" download="Fidelity-Loans-DRP-Propuesta.pdf" class="bg-green-600 text-white font-bold py-4 px-10 rounded-lg text-xl hover:bg-green-700 transition duration-300">
+                    DESCARGAR COTIZACIÓN
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-blue-900 text-white py-10">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 Solutions Group, S.A. | Todos los derechos reservados.</p>
+            <div class="mt-4">
+                <a href="#" class="text-blue-300 hover:text-white mx-2">Política de Privacidad</a>
+                <span class="text-blue-300">|</span>
+                <a href="#" class="text-blue-300 hover:text-white mx-2">Términos de Servicio</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
